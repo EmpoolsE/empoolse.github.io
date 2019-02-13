@@ -180,28 +180,13 @@ function initSolonick() {
         jQuery(this).closest(scw).find(ccsi).slick('slickNext');
     });
 
+jQuery('.image-popup').click(function (e) { 
+    e.preventDefault();
+    jQuery(jQuery(this).attr('href')).arcticmodal();
+});
 
 
 
-    //   lightGallery------------------
-    function lightGalleryInit() {
-        jQuery(".image-popup").lightGallery({
-            selector: "this",
-            cssEasing: "cubic-bezier(0.25, 0, 0.25, 1)",
-            download: false,
-            counter: false
-        });
-        var o = jQuery(".lightgallery"),
-            p = o.data("looped");
-        o.lightGallery({
-            selector: ".lightgallery a.popup-image",
-            cssEasing: "cubic-bezier(0.25, 0, 0.25, 1)",
-            download: false,
-            loop: false,
-            counter: false
-        });
-    }
-    lightGalleryInit();
     //   appear------------------
     jQuery(".stats").appear(function() {
         jQuery(".num").countTo();
@@ -475,10 +460,35 @@ function initparallax() {
         b.init();
     }
 }
-
+jQuery('.tab-control a').click(function (e) { 
+    e.preventDefault();
+    if(!jQuery(this).hasClass('checked')){
+        jQuery('.tab-control a,.tabs-wr>div').removeClass('checked');
+        jQuery(this).addClass('checked');
+        jQuery(this).closest('.tabswr').find(jQuery(this).attr('href')).addClass('checked');
+    }
+    
+});
+jQuery('.tab-head span').click(function (e) { 
+    e.preventDefault();
+    if(!jQuery(this).hasClass('checked')){
+        jQuery('.tab-head span').removeClass('checked');
+        if(!jQuery(this).hasClass('connect')){
+            jQuery('.footer-contacts.connect').hide();
+            jQuery('.footer-contacts.support').show();
+        }else{
+            
+            jQuery('.footer-contacts.support').hide();
+            jQuery('.footer-contacts.connect').show();
+        }
+        jQuery(this).addClass('checked');
+    }
+    
+});
 
 //   Init All ------------------
 jQuery(function() {
+    jQuery('select').niceSelect();
     initparallax();
     initSolonick();
 });
