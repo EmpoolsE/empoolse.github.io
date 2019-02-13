@@ -4317,7 +4317,7 @@ width: 90%;
 
 .agreement>.check-wr input:checked+label {
     display: block;
-    background-image: url(images/checked.png);
+    background-image: url(../images/checked.png);
     width: 27px;
     height: 24px;
     position: absolute;
