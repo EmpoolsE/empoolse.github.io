@@ -4368,6 +4368,16 @@ div.nice-select .option.selected.focus {
     color: #fff100;
 }
 
+.header-logo::after {
+    content: 'trading school';
+    color: rgba(255,255,255,.4);
+    position: absolute;
+    white-space: nowrap;
+    position: absolute;
+    top: -29px;
+    font-size: 14px;
+}
+
 @media only screen and (max-width: 1064px) {
     .main-header {
         width: 100%;
