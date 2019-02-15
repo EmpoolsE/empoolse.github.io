@@ -3026,7 +3026,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     height: 50px;
     line-height: 50px;
     font-weight: 600;
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
     letter-spacing: 2px;
     z-index: 100;
@@ -3198,7 +3198,7 @@ nav.nav-inner {
     height: 100%;
 }
 
-.nav-title a {
+.nav-title p {
     position: absolute;
     bottom: 0;
     background-color: #fff100;
@@ -3208,6 +3208,8 @@ nav.nav-inner {
     font-size: 12px;
     font-weight: 600;
     line-height: 99px;
+    padding: 0;
+    margin: 0;
 }
 
 .scroll-nav.scroll-init+div {

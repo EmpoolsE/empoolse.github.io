@@ -407,6 +407,13 @@ jQuery('.image-popup').click(function (e) {
             }
         }
     });
+    jQuery(".custom-scroll-link-menu").on("click", function (event) {
+        event.preventDefault();
+        var id  = jQuery(this).attr('href'),
+        top = jQuery(id).offset().top;
+        jQuery('body,html').animate({scrollTop: top-85}, 1500);
+        hideMenu();
+      });
 
 
     jQuery(".scroll-init  ul").singlePageNav({
