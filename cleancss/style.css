@@ -4651,6 +4651,13 @@ div.nice-select .option.selected.focus {
     .policy-box>a{
         margin-bottom: 10px;
     }
+    .modals > div:first-child {
+        display: none;
+    } .modals > div:last-child {
+    width: 100%;
+    max-width: 280px;
+    padding-bottom: 20px;
+}
 }
 
 @media only screen and (max-width: 564px) {
@@ -4753,13 +4760,7 @@ div.nice-select .option.selected.focus {
     .footer-contacts li {
         font-size: 11px;}
         .news-item {width: 50%;}
-        .modals > div:first-child {
-            display: none;
-        } .modals > div:last-child {
-        width: 100%;
-        max-width: 280px;
-        padding-bottom: 20px;
-    }
+        
     .payment-wr {
      margin: 0;}
 
