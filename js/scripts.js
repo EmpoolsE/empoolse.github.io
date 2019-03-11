@@ -179,6 +179,15 @@ function initSolonick() {
     sbn.on("click", function() {
         jQuery(this).closest(scw).find(ccsi).slick('slickNext');
     });
+    jQuery('.courses-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        prevArrow: "#courses .sp-cont-prev",
+        nextArrow: "#courses .sp-cont-next"
+    });
 
 jQuery('.image-popup').click(function (e) { 
     e.preventDefault();
