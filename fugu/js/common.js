@@ -54,14 +54,14 @@ $(document).ready(function() {
 	});
 	$('.total-wr a').click(function (e) { 
 		e.preventDefault();
-		console.log($( ".items>div" ));
+		console.log($(".items>div"));
 		if($('[name="phone"]').val() != ''){
-		let meassage = '';
+		let meassage = "";
 		$( ".items>div" ).each(function( index ) {
-			meassage += $( this ).find('h3').text()+', ';
+			meassage += $( this ).find('h3').text()+", \n";
 		});
-		meassage += 'Всего '+$('.total-line p>span').text();
-		meassage += ' Телефон '+$('[name="phone"]').val();
+		meassage += "Всего "+$('.total-line p>span').text()+", \n";
+		meassage += " Телефон "+$('[name="phone"]').val();
 		let endpoint = 'https://api.telegram.org/bot935854161:AAHwlPlRxXoXvxRS12zu18cpeDBo7g2i12U/sendMessage?chat_id=184090117&text=%message';
 		let endpointUrl = endpoint.replace('%message', meassage);
 		let xhr = new XMLHttpRequest();
