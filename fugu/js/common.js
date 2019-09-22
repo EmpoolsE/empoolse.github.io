@@ -52,14 +52,14 @@ $(document).ready(function() {
 		$('.items').append('<div><h3>'+$(this).data('name')+'</h3><span>'+$(this).data('price')+' грн.</span></div>');
 		$('.total-line span').text(($('.total-line span').text()*1)+$(this).data('price'));
 	});
-	/*$('.total-wr a').click(function (e) { 
+	$('.total-wr a').click(function (e) { 
 		e.preventDefault();
-		let endpoint = ;
+		let endpoint = 'https://api.telegram.org/bot935854161:AAHwlPlRxXoXvxRS12zu18cpeDBo7g2i12U/sendMessage?chat_id=184090117&text=message';
 		let endpointUrl = endpoint.replace('%message', 'asdq');
 		let xhr = new XMLHttpRequest();
 		xhr.open('GET', endpointUrl);
 		xhr.send();
-	});*/
+	});
 	$(document).mouseup(function (e) {
 		var container = $(".cart-wr");
 		if (container.has(e.target).length === 0){
