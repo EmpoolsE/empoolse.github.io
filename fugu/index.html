@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>FUGU Food</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <div class="wraper">
+        <div>
+            <div>
+                <div class="main-block">
+                    <div class="title-wrap">
+                        <h1>
+                            <span>F</span>
+                            <span>U</span>
+                            <span>G</span>
+                            <span>U</span>
+                        </h1>
+                    </div>
+                    <ul class="menu-wrap">
+                        <li><a href="#rolls">Ролы</a></li>
+                        <li><a href="#maki">Маки</a></li>
+                        <li><a href="#sets">Сеты</a></li>
+                        <li><a href="#tempura">Темпура/Опаленные</a></li>
+                        <li><a href="#notrolls">Не роллы</a></li>
+                        <li><a href="#more">Добавки</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a href="" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div class="cart-wr">
+            <a href="" class="cart"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.53 7l-.564 2h-15.127l-.839-2h16.53zm-14.013 6h12.319l.564-2h-13.722l.839 2zm5.983 5c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm11.305-15l-3.432 12h-13.017l.839 2h13.659l3.474-12h1.929l.743-2h-4.195zm-6.305 15c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"/></svg></div><span>0</span></a>
+            <div class="cart-block">
+                <div>
+                    <div class="title">
+                        <h2>Заказ</h2>
+                    </div>
+                    <div class="items">
+
+                    </div>
+                    <div class="total-wr">
+                        <div class="total-line"><h3>Всего</h3><p><span>0</span> грн.</p></div>
+                        <div class="phone">
+                            <input type="text" name="phone" placeholder="Ваш телефон">
+                        </div>
+                        <a href="">Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div>
+                <div id="rolls" class="rolls">
+                    <div class="title">
+                        <h2>Ролы</h2>
+                    </div>
+                    <div class="wrap">
+                        <div class="top hot" data-name="Рио" data-price="160">
+                            <h3>Рио</h3>
+                            <p>Креветка Тигровая, сурими. икра Масаго, соус Спайси, авокадо, кунжут жареный.</p>
+                            <img src="img/rio.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 160 грн.</p>
+                                <p>245г.</p>
+                            </div>
+                        </div>
+                        <div class="" data-name="РИНГО" data-price="85">
+                            <h3>РИНГО</h3>
+                            <p>Сурими, икра Масаго,японский омлет, авокадо</p>
+                            <img src="img/r2.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 85 грн.</p>
+                                <p>205г.</p>
+                            </div>
+                        </div>
+                        <div class="" data-name="БОНИТО" data-price="59">
+                            <h3>БОНИТО</h3>
+                            <p>Сыр сливочный, японский омлет, стружка тунца.</p>
+                            <img src="img/r3.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 59 грн.</p>
+                                <p>190г.</p>
+                            </div>
+                        </div>
+                        <div class="" data-name="ХОКАЙДО" data-price="115">
+                            <h3>ХОКАЙДО</h3>
+                            <p>Креветка Тигровая, сыр сливочный, стружка тунца, кунжут жареный.</p>
+                            <img src="img/r4.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 115 грн.</p>
+                                <p>215г.</p>
+                            </div>
+                        </div>
+                        <div class="hot" data-name="ФЬЮЖН" data-price="95">
+                            <h3>ФЬЮЖН</h3>
+                            <p>Лосось, сыр сливочный, соус Спайси, перец сладкий, кунжут жареный.</p>
+                            <img src="img/r5.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 95 грн.</p>
+                                <p>255г.</p>
+                            </div>
+                        </div>
+                        <div class="top " data-name="ЛАКШЕРИ" data-price="100">
+                            <h3>ЛАКШЕРИ</h3>
+                            <img src="img/r6.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 100 грн.</p>
+                                <p>265г.</p>
+                            </div>
+                        </div>
+                        <div class="top " data-name="Филадельфия" data-price="110">
+                            <h3>Филадельфия</h3>
+                            <p>Лосось, сыр сливочный, огурец.</p>
+                            <img src="img/r7.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 110 грн.</p>
+                                <p>245г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="БАНЗАЙ" data-price="160">
+                            <h3>БАНЗАЙ</h3>
+                            <p>Угорь, креветка Тигровая, сыр сливочный, соус Унаги, авокадо, кунжут жареный.</p>
+                            <img src="img/r8.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 160 грн.</p>
+                                <p>240г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="ЭДЕМ" data-price="100">
+                            <h3>ЭДЕМ</h3>
+                            <p>Лосось, икра Масаго, сыр сливочный, огурец, перец сладкий.</p>
+                            <img src="img/r9.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 100 грн.</p>
+                                <p>250г.</p>
+                            </div>
+                        </div>
+                        <div class=" hot" data-name="ДЗАКУРО" data-price="105">
+                            <h3>ДЗАКУРО</h3>
+                            <p>Лосось, икра Масаго, соус Спайси, японский омлет,авокадо.</p>
+                            <img src="img/r10.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 105 грн.</p>
+                                <p>235г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="Бостон" data-price="95">
+                            <h3>Бостон</h3>
+                            <p>Сурими, икра Масаго, сыр японский омлет, огурец.</p>
+                            <img src="img/r11.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 95 грн.</p>
+                                <p>260г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="ФИЛА-ДАБЛ" data-price="160">
+                            <h3>ФИЛА-ДАБЛ</h3>
+                            <p>Лосось, сыр сливочный, авокадо.</p>
+                            <img src="img/r12.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 160 грн.</p>
+                                <p>330г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="КАТАНА" data-price="105">
+                            <h3>КАТАНА</h3>
+                            <p>Креветка Тигровая, икра Масаго, сыр сливочный, огурец.</p>
+                            <img src="img/r13.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 105 грн.</p>
+                                <p>215г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="КАМПАЙ" data-price="115">
+                            <h3>КАМПАЙ</h3>
+                            <p>Угорь, сыр сливочный, соус Унаги, огурец, кунжут жареный.</p>
+                            <img src="img/r14.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 115 грн.</p>
+                                <p>215г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="Доминик" data-price="105">
+                            <h3>Доминик</h3>
+                            <p>Тунец, сыр сливочный, авокадо.</p>
+                            <img src="img/r15.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 105 грн.</p>
+                                <p>220г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="ГЕЙША" data-price="105">
+                            <h3>ГЕЙША</h3>
+                            <p>Тунец, сыр сливочный, соус Ореховый, огурец, Хияши Вакамз.</p>
+                            <img src="img/r16.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 105 грн.</p>
+                                <p>235г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="АКИТА" data-price="95">
+                            <h3>АКИТА</h3>
+                            <p>Лосось, сыр сливочный, огурец, кунжут жареный.</p>
+                            <img src="img/r17.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 95 грн.</p>
+                                <p>215г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="САКУРА" data-price="140">
+                            <h3>САКУРА</h3>
+                            <p>Креветка Тигровая, икра Масаго, японский омлет, сыр сливочный, стружка тунца.</p>
+                            <img src="img/r18.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 140 грн.</p>
+                                <p>245г.</p>
+                            </div>
+                        </div>
+                        <div class=" hot" data-name="ФАЕР" data-price="100">
+                            <h3>ФАЕР</h3>
+                            <p>Тунец, икра Масаго, сыр сливочный, соус Спайси, авокадо.</p>
+                            <img src="img/r19.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 100 грн.</p>
+                                <p>210г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="КУРА" data-price="95">
+                            <h3>КУРА</h3>
+                            <p>Лосось, сыр сливочный, соус У наги, огурец, стружка тунца.</p>
+                            <img src="img/r20.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 95 грн.</p>
+                                <p>215г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="САМУРАЙ" data-price="125">
+                            <h3>САМУРАЙ</h3>
+                            <p>Лосось, угорь, японский омлет, сыр сливочный, авокадо.</p>
+                            <img src="img/r21.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 125 грн.</p>
+                                <p>235г.</p>
+                            </div>
+                        </div>
+                        <div class="top " data-name="ВЕГАС" data-price="160">
+                            <h3>ВЕГАС</h3>
+                            <p>Лосось, тунец, сыр сливочный</p>
+                            <img src="img/r22.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 160 грн.</p>
+                                <p>255г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="ГРИН" data-price="105">
+                            <h3>ГРИН</h3>
+                            <p>Креветка Тигровая, икра Масаго, сыр сливочный, огурец.</p>
+                            <img src="img/r23.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 105 грн.</p>
+                                <p>220г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="ОКИНАВА" data-price="100">
+                            <h3>ОКИНАВА</h3>
+                            <p>Тунец, икра Масаго, сыр сливочный, авокадо.</p>
+                            <img src="img/r24.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 100 грн.</p>
+                                <p>215г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="КАЛИФОРНИЯ В КУНЖУТЕ" data-price="69">
+                            <h3>КАЛИФОРНИЯ В КУНЖУТЕ</h3>
+                            <p>Сурими, майонез, авокадо, огурец, кунжут жареный.</p>
+                            <img src="img/r25.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 69 грн.</p>
+                                <p>210г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="БЕЛЛА" data-price="95">
+                            <h3>БЕЛЛА</h3>
+                            <p>Сурими, икра Масаго, сыр сливочный, Хияши Вакамз, лук зеленый, кунжут жареный.</p>
+                            <img src="img/r26.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 95 грн.</p>
+                                <p>250г.</p>
+                            </div>
+                        </div>
+                        <div class="top " data-name="ВУЛКАН" data-price="120">
+                            <h3>ВУЛКАН</h3>
+                            <p>Тунец, сурими, икра Масаго, сыр сливочный, авокадо, кунжут жареный.</p>
+                            <img src="img/r27.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 120 грн.</p>
+                                <p>270г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="ЧЕРНЫЙ ДРАКОН" data-price="160">
+                            <h3>ЧЕРНЫЙ ДРАКОН</h3>
+                            <p>Угорь, креветка Тигровая, майонез, соус У наги, огурец, кунжут жареный.</p>
+                            <img src="img/r28.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 160 грн.</p>
+                                <p>225г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="КРАСНЫЙ ДРАКОН" data-price="160">
+                            <h3>КРАСНЫЙ ДРАКОН</h3>
+                            <p>Лосось, креветка Тигровая, сыр сливочный, майонез, авокадо.</p>
+                            <img src="img/r29.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 160 грн.</p>
+                                <p>280г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="ЗЕЛЕНЫЙ ДРАКОН" data-price="160">
+                            <h3>ЗЕЛЕНЫЙ ДРАКОН</h3>
+                            <p>Тунец, сыр сливочный, соус Унаги, авокадо, кунжут жареный.</p>
+                            <img src="img/r30.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 160 грн.</p>
+                                <p>235г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="АКИБА" data-price="140">
+                            <h3>АКИБА</h3>
+                            <p>Мидии, икра Масаго, японский омлет, сыр сливочный, огурец.</p>
+                            <img src="img/rt.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 140 грн.</p>
+                                <p>220г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="ФИЛА-ЛАЙТ" data-price="120">
+                            <h3>ФИЛА-ЛАЙТ</h3>
+                            <p>Лосось, сыр сливочный, авокадо.</p>
+                            <img src="img/r32.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 120 грн.</p>
+                                <p>245г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="ВАКАИ" data-price="79">
+                            <h3>ВАКАИ</h3>
+                            <p>Мидии, майонез, перец сладкий, кунжут жареный.</p>
+                            <img src="img/r33.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 79 грн.</p>
+                                <p>205г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="ГРИНВуД" data-price="110">
+                            <h3>ГРИНВуД</h3>
+                            <p>Мидии, икра Масаго, сыр сливочный, соус У наг и, огурец, авокадо, кунжут жареный.</p>
+                            <img src="img/r34.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 110 грн.</p>
+                                <p>245г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="ФУКО" data-price="125">
+                            <h3>ФУКО</h3>
+                            <p>Угорь, японский омлет, сыр сливочный, соус Унаги, огурец, кунжут жареный.</p>
+                            <img src="img/r35.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 125 грн.</p>
+                                <p>230г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="МИЯЦУ" data-price="79">
+                            <h3>МИЯЦУ</h3>
+                            <p>Мидии, японский омлет, сыр сливочный, огурец, стружка тунца.</p>
+                            <img src="img/r36.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 79 грн.</p>
+                                <p>210г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="ЯКуДЗА" data-price="115">
+                            <h3>ЯКуДЗА</h3>
+                            <p>Лосось, мидии,соус Унаги,японский омлет, кунжут жареный.</p>
+                            <img src="img/r37.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 115 грн.</p>
+                                <p>255г.</p>
+                            </div>
+                        </div>
+                        <div class="top hot" data-name="ТОКУСИМА" data-price="95">
+                            <h3>ТОКУСИМА</h3>
+                            <p>Лосось, икра Масаго. японский омлет, соус Спайси, огурец.</p>
+                            <img src="img/r38.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 95 грн.</p>
+                                <p>215г.</p>
+                            </div>
+                        </div>
+                        <div class=" hot" data-name="ТАТАМИ" data-price="120">
+                            <h3>ТАТАМИ</h3>
+                            <p>Лосось, сыр сливочный, соус Спайси, авокодо, огурец.</p>
+                            <img src="img/r39.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 120 грн.</p>
+                                <p>260г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="КАЛИфОРНИЯ ТуНЕЦ" data-price="86">
+                            <h3>КАЛИфОРНИЯ ТуНЕЦ</h3>
+                            <p>Тунец, сурими, майонез, авокадо, огурец, кунжут жареный.</p>
+                            <img src="img/r40.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 86 грн.</p>
+                                <p>240г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="ТАКАРА" data-price="120">
+                            <h3>ТАКАРА</h3>
+                            <p>Угорь, сыр сливочный, соус Унаги, огурец, авокадо, кунжут жареный.</p>
+                            <img src="img/r41.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 120 грн.</p>
+                                <p>230г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="фИЛА-уНАГИ" data-price="125">
+                            <h3>фИЛА-уНАГИ</h3>
+                            <p>Угорь, сыр сливочный, соус Унаги, авокадо.</p>
+                            <img src="img/r42.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 125 грн.</p>
+                                <p>220г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="САХАРА" data-price="115">
+                            <h3>САХАРА</h3>
+                            <p>Угорь, японский омлет, Хияши Вакамэ, огурец, кунжут жареный.</p>
+                            <img src="img/r43.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 115 грн.</p>
+                                <p>215г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="КАЛИфорНИЯ" data-price="79">
+                            <h3>КАЛИфорНИЯ</h3>
+                            <p>Сурими, икра Масаго, майонез, авокадо, огурец.</p>
+                            <img src="img/r44.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 79 грн.</p>
+                                <p>210г.</p>
+                            </div>
+                        </div>
+                        <div class="top " data-name="ХОТЕЙ" data-price="85">
+                            <h3>ХОТЕЙ</h3>
+                            <p>Лосось, сыр сливочный, Хияши Вакамз, стружка тунца.</p>
+                            <img src="img/r45.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 85 грн.</p>
+                                <p>205г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="МИЯГИ" data-price="110">
+                            <h3>МИЯГИ</h3>
+                            <p>Лосось, сыр сливочный, японский омлет, кунжут жареный.</p>
+                            <img src="img/r46.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 110 грн.</p>
+                                <p>250г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="MIX" data-price="140">
+                            <h3>MIX</h3>
+                            <p>Креветка Тигровая, лосось, угорь, икраМасаго, японский омлет.</p>
+                            <img src="img/r47.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 140 грн.</p>
+                                <p>210г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="КАРДИНАЛ" data-price="85">
+                            <h3>КАРДИНАЛ</h3>
+                            <p>Тунец, сыр сливочный, огурец, перец сладкий, кунжут жареный.</p>
+                            <img src="img/r48.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 85 грн.</p>
+                                <p>200г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="КАНАДА" data-price="160">
+                            <h3>КАНАДА</h3>
+                            <p>Угорь, лосось, сыр сливочный, соус Унаги, авокадо, кунжут жареный.</p>
+                            <img src="img/r49.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 160 грн.</p>
+                                <p>235г.</p>
+                            </div>
+                        </div>
+                        <div class=" hot" data-name="ДАКОТА" data-price="105">
+                            <h3>ДАКОТА</h3>
+                            <p>Лосось. икра Масаго, соус Спайси, авокадо, огурец, лук зеленый.</p>
+                            <img src="img/r50.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 105 грн.</p>
+                                <p>220г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="БАЛИ" data-price="79">
+                            <h3>БАЛИ</h3>
+                            <p>Сурими, икра Масаго, огурец, авокадо, кунжут жареный.</p>
+                            <img src="img/r51.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 79 грн.</p>
+                                <p>215г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="АСАХИ" data-price="110">
+                            <h3>АСАХИ</h3>
+                            <p>Лосось, сыр сливочный, японский омлет, лук зеленый.</p>
+                            <img src="img/r52.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 110 грн.</p>
+                                <p>250г.</p>
+                            </div>
+                        </div>
+                        <div class="new hot" data-name="РЕДМОН" data-price="140">
+                            <h3>РЕДМОН</h3>
+                            <p>Креветка Тигровая в темпура, икра Масаго, соус Спайси, кунжут жареный.</p>
+                            <img src="img/r53.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 140 грн.</p>
+                                <p>210г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="Року" data-price="160">
+                            <h3>Року</h3>
+                            <p>Угорь, креветка Тигровая, соус Унаги, авокадо, Хияши Вакамэ, кунжут жареный.</p>
+                            <img src="img/r54.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 160 грн.</p>
+                                <p>225г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="Хот" data-price="85">
+                            <h3>Хот</h3>
+                            <p>Тунец, сыр сливочный, огурец, стружка тунца.</p>
+                            <img src="img/r55.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 85 грн.</p>
+                                <p>205г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="КАЛИФОРНИЯ С уГРЕМ" data-price="115">
+                            <h3>КАЛИФОРНИЯ С уГРЕМ</h3>
+                            <p>Угорь, сурими, майонез, авокадо, огурец, кунжут жареный.</p>
+                            <img src="img/r56.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 115 грн.</p>
+                                <p>230г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="МАЦУМОТО" data-price="95">
+                            <h3>МАЦУМОТО</h3>
+                            <p>Лосось, икра Масаго, японский омлет, огурец.</p>
+                            <img src="img/r57.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 95 грн.</p>
+                                <p>205г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="ОСАККА" data-price="125">
+                            <h3>ОСАККА</h3>
+                            <p>Лосось, икра Масаго, сыр сливочный, огурец, Хияши Вакамэ.</p>
+                            <img src="img/r58.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 125 грн.</p>
+                                <p>270г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="КАЛИФОРНИЯ КРЕВЕТКА" data-price="120">
+                            <h3>КАЛИФОРНИЯ КРЕВЕТКА</h3>
+                            <p>Креветка Тигровая, сурими, икра Масаго, майонез, авокадо, огурец.</p>
+                            <img src="img/r59.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 120 грн.</p>
+                                <p>240г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="ФУДЗИ" data-price="120">
+                            <h3>ФУДЗИ</h3>
+                            <p>Угорь, сыр сливочный, огурец.</p>
+                            <img src="img/r60.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 120 грн.</p>
+                                <p>210г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="ЯСАЙ" data-price="59">
+                            <h3>ЯСАЙ</h3>
+                            <p>Авокадо, огурец, перец сладкий, лук зеленый, кунжут жареный.</p>
+                            <img src="img/r61.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 59 грн.</p>
+                                <p>200г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="ГуРу" data-price="160">
+                            <h3>ГуРу</h3>
+                            <p>Угорь, тунец, сыр сливочный, соус Унаги, лук зеленый, кунжут жареный.</p>
+                            <img src="img/r62.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 160 грн.</p>
+                                <p>240г.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="maki" class="rolls">
+                    <div class="title">
+                        <h2>Маки</h2>
+                    </div>
+                    <div class="wrap">
+                        <div class=" " data-name="лосось" data-price="60">
+                            <h3>лосось</h3>
+                            <p></p>
+                            <img src="img/m1.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 60 грн.</p>
+                                <p>110г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="ОГуРЕц" data-price="35">
+                            <h3>ОГуРЕц</h3>
+                            <p></p>
+                            <img src="img/m1.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 35 грн.</p>
+                                <p>110г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="ЛОСОСЬ СПАЙСИ" data-price="65">
+                            <h3>ЛОСОСЬ СПАЙСИ</h3>
+                            <p></p>
+                            <img src="img/m1.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 65 грн.</p>
+                                <p>120г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="СУРИМИ СПАЙСИ" data-price="50">
+                            <h3>СУРИМИ СПАЙСИ</h3>
+                            <p></p>
+                            <img src="img/m1.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 50 грн.</p>
+                                <p>120г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="ЧУКА" data-price="45">
+                            <h3>ЧУКА</h3>
+                            <p></p>
+                            <img src="img/m1.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 45 грн.</p>
+                                <p>110г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="УГОРЬ" data-price="65">
+                            <h3>УГОРЬ</h3>
+                            <p></p>
+                            <img src="img/m1.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 65 грн.</p>
+                                <p>120г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="СУРИМИ" data-price="45">
+                            <h3>СУРИМИ</h3>
+                            <p></p>
+                            <img src="img/m1.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 45 грн.</p>
+                                <p>110г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="овощной" data-price="50">
+                            <h3>овощной</h3>
+                            <p></p>
+                            <img src="img/m1.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 50 грн.</p>
+                                <p>110г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="ТУНЕЦ" data-price="60">
+                            <h3>ТУНЕЦ</h3>
+                            <p></p>
+                            <img src="img/m1.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 60 грн.</p>
+                                <p>110г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="МИДИИ" data-price="45">
+                            <h3>МИДИИ</h3>
+                            <p></p>
+                            <img src="img/m1.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 45 грн.</p>
+                                <p>110г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="авокадо" data-price="45">
+                            <h3>авокадо</h3>
+                            <p></p>
+                            <img src="img/m1.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 45 грн.</p>
+                                <p>110г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="КРЕВЕТКА" data-price="65">
+                            <h3>КРЕВЕТКА</h3>
+                            <p></p>
+                            <img src="img/m1.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 65 грн.</p>
+                                <p>110г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="ТАМАГо" data-price="45">
+                            <h3>ТАМАГо</h3>
+                            <p></p>
+                            <img src="img/m1.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 45 грн.</p>
+                                <p>110г.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="sets" class="rolls">
+                    <div class="title">
+                        <h2>Сеты</h2>
+                    </div>
+                    <div class="wrap">
+                        <div class="top " data-name="Фантини" data-price="470">
+                            <h3>Фантини</h3>
+                            <p></p>
+                            <img src="img/s1.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 470 грн.</p>
+                                <p>990г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="Эмодзи" data-price="340">
+                            <h3>Эмодзи</h3>
+                            <p></p>
+                            <img src="img/s2.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 340 грн.</p>
+                                <p>785г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="Негрони" data-price="349">
+                            <h3>Негрони</h3>
+                            <p></p>
+                            <img src="img/s3.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 349 грн.</p>
+                                <p>790г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="Аризона" data-price="245">
+                            <h3>Аризона</h3>
+                            <p></p>
+                            <img src="img/s4.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 245 грн.</p>
+                                <p>445г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="Чикаго" data-price="362">
+                            <h3>Чикаго</h3>
+                            <p></p>
+                            <img src="img/s5.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 362 грн.</p>
+                                <p>755г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="Три дракона" data-price="480">
+                            <h3>Три дракона</h3>
+                            <p></p>
+                            <img src="img/s6.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 480 грн.</p>
+                                <p>740г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="Хьюстен" data-price="349">
+                            <h3>Хьюстен</h3>
+                            <p></p>
+                            <img src="img/s7.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 349 грн.</p>
+                                <p>700г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="Филомания" data-price="460">
+                            <h3>Филомания</h3>
+                            <p></p>
+                            <img src="img/s8.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 460 грн.</p>
+                                <p>980г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="Сет 1" data-price="365">
+                            <h3>Сет 1</h3>
+                            <p></p>
+                            <img src="img/s9.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 365 грн.</p>
+                                <p>695г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="Токио" data-price="359">
+                            <h3>Токио</h3>
+                            <p></p>
+                            <img src="img/s10.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 359 грн.</p>
+                                <p>685г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="Сет 2" data-price="400">
+                            <h3>Сет 2</h3>
+                            <p></p>
+                            <img src="img/s11.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 400 грн.</p>
+                                <p>770г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="Сет 3" data-price="230">
+                            <h3>Сет 3</h3>
+                            <p></p>
+                            <img src="img/s12.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 230 грн.</p>
+                                <p>505г.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tempura" class="rolls">
+                    <div class="title">
+                        <h2>Темпура/Опаленные</h2>
+                    </div>
+                    <div class="wrap">
+                        <div class="new hot" data-name="МАНХЭТТЕН" data-price="140">
+                            <h3>МАНХЭТТЕН</h3>
+                            <p>Лосось, японский омлет, сыр сливочный, соус Шрирача, авокадо, лимон.</p>
+                            <img src="img/t1.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 140 грн.</p>
+                                <p>270г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="фИЛА ОПАЛЕННАЯ" data-price="140">
+                            <h3>фИЛА ОПАЛЕННАЯ</h3>
+                            <p>Лосось, сыр сливочный, соус Унаги, авокадо, кунжут жареный.</p>
+                            <img src="img/t2.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 140 грн.</p>
+                                <p>260г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="ТАЙфуН" data-price="140">
+                            <h3>ТАЙфуН</h3>
+                            <p>Лосось, икра Масаго, сыр сливочный, соус Унаги, огурец, кунжут жареный.</p>
+                            <img src="img/t3.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 140 грн.</p>
+                                <p>260г.</p>
+                            </div>
+                        </div>
+                        <div class="new hot" data-name="ПАНКО" data-price="180">
+                            <h3>ПАНКО</h3>
+                            <p>Лосось, креветка Тигровая в темпера, икра Масаго, соус Спайси.</p>
+                            <img src="img/t4.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 180 грн.</p>
+                                <p>235г.</p>
+                            </div>
+                        </div>
+                        <div class="new hot" data-name="НЕВАДА" data-price="140">
+                            <h3>НЕВАДА</h3>
+                            <p>Лосось, сурими, икра Масаго,японский омлет, соус Спайси, соус Унаги, лук зеленый.</p>
+                            <img src="img/t5.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 140 грн.</p>
+                                <p>255г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="Нидзи" data-price="140">
+                            <h3>Нидзи</h3>
+                            <p>Лосось, сыр сливочный, соус Унаги, огурец, авокадо, кунжут жареный.</p>
+                            <img src="img/t6.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 140 грн.</p>
+                                <p>265г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="КИРО" data-price="140">
+                            <h3>КИРО</h3>
+                            <p>Лосось, икра Масаго, сыр сливочный, перец сладкий.</p>
+                            <img src="img/t7.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 140 грн.</p>
+                                <p>240г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="ЛАЙТ-ТЕМПуРА" data-price="115">
+                            <h3>ЛАЙТ-ТЕМПуРА</h3>
+                            <p>Лосось, сыр сливочный, огурец, авокадо, лук зеленый,темпура.</p>
+                            <img src="img/t8.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 115 грн.</p>
+                                <p>260г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="КАНИ" data-price="100">
+                            <h3>КАНИ</h3>
+                            <p>Сурими, японский омлет, майонез, огурец, перец сладкий, лук зеленый, кунжут жареный, темпура.</p>
+                            <img src="img/t9.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 100 грн.</p>
+                                <p>245г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="МАГуРо-ТЕМПУРА" data-price="115">
+                            <h3>МАГуРо-ТЕМПУРА</h3>
+                            <p>Тунец, сыр сливочный, авокадо.</p>
+                            <img src="img/t10.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 115 грн.</p>
+                                <p>220г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="ЭБИ ТЕМПуРА " data-price="160">
+                            <h3>ЭБИ ТЕМПуРА </h3>
+                            <p>Креветка Тигровая, сыр сливочный, огурец, темпура, панировочные сухари.</p>
+                            <img src="img/t11.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 160 грн.</p>
+                                <p>240г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="уНАГИ ТЕМПуРА" data-price="160">
+                            <h3>уНАГИ ТЕМПуРА</h3>
+                            <p>Угорь, икра Масаго, сурими, сыр сливочный, огурец, темпура, панировочные сухари.</p>
+                            <img src="img/t12.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 160 грн.</p>
+                                <p>265г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="КАЛИФОРНИЯ ТЕМПуРА" data-price="100">
+                            <h3>КАЛИФОРНИЯ ТЕМПуРА</h3>
+                            <p>Сурими, икра Масаго, майонез, авокадо, огурец, темпура, панировочные сухари.</p>
+                            <img src="img/t13.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 100 грн.</p>
+                                <p>245г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="фИЛА ТЕМПЫРА" data-price="120">
+                            <h3>фИЛА ТЕМПЫРА</h3>
+                            <p>Лосось, сыр сливочный, огурец, темпура, панировочные сухари.</p>
+                            <img src="img/t14.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 120 грн.</p>
+                                <p>260г.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="notrolls" class="rolls">
+                    <div class="title">
+                        <h2>Не роллы</h2>
+                    </div>
+                    <div class="wrap">
+                        <div class="new " data-name="Мисо" data-price="40">
+                            <h3>Мисо</h3>
+                            <p>Мисо, грибы Шиитаке, сыр Тофу, водорости Вакамэ, лук зеленый.</p>
+                            <img src="img/n1.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 40 грн.</p>
+                                <p>200г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="мисо мидии" data-price="75">
+                            <h3>мисо мидии</h3>
+                            <p>Мидии, мисо, грибы Шиитаке, сыр Тофу, водорости Вакамэ, лук зеленый, кунжут жареный.</p>
+                            <img src="img/n2.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 75 грн.</p>
+                                <p>300г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="мисо зби" data-price="79">
+                            <h3>мисо зби</h3>
+                            <p>Креветка, мисо, грибы Шиитаке, сыр Тофу, водорости Вакамз, лук зеленый, кунжут жареный.</p>
+                            <img src="img/n3.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 79 грн.</p>
+                                <p>300г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="МИСО СЯКЕ" data-price="75">
+                            <h3>МИСО СЯКЕ</h3>
+                            <p>Лосось, мисо, грибы Шиитаке, сыр Тофу, водорости Вакамэ, лук зеленый.</p>
+                            <img src="img/n4.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 75 грн.</p>
+                                <p>300г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="КАРТОфЕЛЬ ФРИ(Средняя)" data-price="28">
+                            <h3>КАРТОфЕЛЬ ФРИ</h3>
+                            <p>Средняя</p>
+                            <img src="img/n5.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 28 грн.</p>
+                                <p>135г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="КАРТОфЕЛЬ ФРИ(Большая)" data-price="50">
+                            <h3>КАРТОфЕЛЬ ФРИ</h3>
+                            <p>Большая</p>
+                            <img src="img/n5.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 50 грн.</p>
+                                <p>270г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="КУРИНЫЕ НАГЕТСЫ(Средняя)" data-price="50">
+                            <h3>КУРИНЫЕ НАГЕТСЫ</h3>
+                            <p>Средняя</p>
+                            <img src="img/n6.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 50 грн.</p>
+                                <p>8 шт.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="КУРИНЫЕ НАГЕТСЫ(Большая)" data-price="70">
+                            <h3>КУРИНЫЕ НАГЕТСЫ</h3>
+                            <p>Большая</p>
+                            <img src="img/n6.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 70 грн.</p>
+                                <p>12 шт.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="ЭБИ ТЕМПУРА(Средняя)" data-price="78">
+                            <h3>ЭБИ ТЕМПУРА</h3>
+                            <p>Средняя</p>
+                            <img src="img/n7.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 78 грн.</p>
+                                <p>3 шт.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="ЭБИ ТЕМПУРА(Большая)" data-price="130">
+                            <h3>ЭБИ ТЕМПУРА</h3>
+                            <p>Большая</p>
+                            <img src="img/n7.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 130 грн.</p>
+                                <p>6 шт.</p>
+                            </div>
+                        </div>
+                        <!--<div class="new " data-name="КУРИНЫЙ ХВОРОСТ" data-price="">
+                            <h3>КУРИНЫЙ ХВОРОСТ</h3>
+                            <p></p>
+                            <img src="img/n8.png" alt="">
+                            <div class="price-block">
+                                <p></p>
+                                <p></p>
+                            </div>
+                        </div>-->
+                        <div class=" " data-name="ЧукА" data-price="40">
+                            <h3>ЧукА</h3>
+                            <p>Хияши Вакамэ, соус Ореховый, лимон, кунжут жареный.</p>
+                            <img src="img/n9.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 40 грн.</p>
+                                <p>125г.</p>
+                            </div>
+                        </div>
+                        <div class="new " data-name="СЕндвич С ЛОСОСЕМ" data-price="150">
+                            <h3>СЕндвич С ЛОСОСЕМ</h3>
+                            <p>Лосось, сыр сливочный, авокадо, темпура, панировочные сухари.</p>
+                            <img src="img/n10.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 150 грн.</p>
+                                <p>280г.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="more" class="rolls">
+                    <div class="title">
+                        <h2>Добавки</h2>
+                    </div>
+                    <div class="wrap">
+                       <!-- <div class=" " data-name="СОУС ТАРТАР/ ОСТРЫЙ/ КЕТЧУП/ КЕЧуНЕЗ" data-price="7">
+                            <h3>СОУС ТАРТАР/ ОСТРЫЙ/ КЕТЧУП/ КЕЧуНЕЗ</h3>
+                            <p></p>
+                            <img src="img/d1.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 7 грн.</p>
+                                <p></p>
+                            </div>
+                        </div>-->
+                        <div class=" " data-name="ПАЛОЧКИ" data-price="2">
+                            <h3>ПАЛОЧКИ</h3>
+                            <p></p>
+                            <img src="img/d2.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 2 грн.</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="ИМБИРЬ" data-price="10">
+                            <h3>ИМБИРЬ</h3>
+                            <p></p>
+                            <img src="img/d3.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 10 грн.</p>
+                                <p>30г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="СОУС СОЕВЫЙ" data-price="12">
+                            <h3>СОУС СОЕВЫЙ</h3>
+                            <p></p>
+                            <img src="img/d4.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 12 грн.</p>
+                                <p>100мл.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="СОУС ОРЕХОВЫй" data-price="30">
+                            <h3>СОУС ОРЕХОВЫй</h3>
+                            <p></p>
+                            <img src="img/d5.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 30 грн.</p>
+                                <p>30г.</p>
+                            </div>
+                        </div>
+                        <!--<div class=" " data-name="ФИКСАТОР" data-price="2">
+                            <h3>ФИКСАТОР</h3>
+                            <p></p>
+                            <img src="img/d6.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 2 грн.</p>
+                                <p></p>
+                            </div>
+                        </div>-->
+                        <div class=" " data-name="ВАСАБИ" data-price="15">
+                            <h3>ВАСАБИ</h3>
+                            <p></p>
+                            <img src="img/d7.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 15 грн.</p>
+                                <p>30г.</p>
+                            </div>
+                        </div>
+                        <div class=" " data-name="СОУС СПАЙСИ" data-price="30">
+                            <h3>СОУС СПАЙСИ</h3>
+                            <p></p>
+                            <img src="img/d8.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 30 грн.</p>
+                                <p>30г.</p>
+                            </div>
+                        </div>
+                        <!--<div class=" " data-name="СЕТНИЦА" data-price="20">
+                            <h3>СЕТНИЦА</h3>
+                            <p></p>
+                            <img src="img/d9.png" alt="">
+                            <div class="price-block">
+                                <p>Цена: 20 грн.</p>
+                                <p></p>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div id="inst-wr">
+                    <div class="title">
+                        <h2>Instagram</h2>
+                    </div>
+                </div>
+                <div>
+                    <div class="title">
+                        <h2>Информация</h2>
+                    </div>
+                    <div class="akc-wr">
+                        <div>
+                            <div style="background-image: url(http://fugu.mk.ua/gallery_gen/89b6d0ab7f3af369681f37ccd256293d.jpg)"></div>
+                            <div style="background-image: url(http://fugu.mk.ua/gallery_gen/680bf52c4f1b5adc8830bb9f88a01f08.jpg)"></div>
+                            <div style="background-image: url(http://fugu.mk.ua/gallery_gen/f4d39ff85c108590f1a9681c30430ace.jpg)"></div>
+                            <div style="background-image: url(http://fugu.mk.ua/gallery_gen/7e1f00f525a6962d13ba730d51598aeb.jpg)"></div>
+                            <div style="background-image: url(http://fugu.mk.ua/gallery_gen/758b183dacc635d4074b675510ebdcf6.jpg)"></div>
+                        </div>
+                    </div>
+                    <div class="contacts">
+                        <div class="contacts-wrap">
+                            <h2>*ДОСТАВКА БЕСПЛАТНО ПРИ ЗАКАЗЕ ОТ 300 грн, УТОЧНЯЙТЕ МИНИМАЛЬНЫЙ ЗАКАЗ ДЛЯ ВАШЕГО РАЙОНА У ОПЕРАТОРА</h2>
+                            <p style="width: 100%;"><span>Режим работы</span><br> пн.-вс. с 11:00 до 23:00 <br>доставка с 12:00 до 22:00</p>
+                            <a href="tel:+380931317403">+38(093)131-74-03</a>
+                            <a href="tel:+380979714834">+38(097)971-48-34</a>
+                            
+                        </div>
+                    </div>
+                    <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2723.8693691697918!2d32.04844221560763!3d46.944606479146316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x91d3117a58f8d75a!2sFUGU+sushi!5e0!3m2!1sru!2sua!4v1566155185088!5m2!1sru!2sua" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+    <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="js/jqBootstrapValidation.js" type="text/javascript"></script>
+    <script src="js/slick.min.js" type="text/javascript"></script>
+    <script src="js/common.js" type="text/javascript"></script>
+    <!-- Yandex.Metrika counter -->
+    <!-- /Yandex.Metrika counter -->
+    <!-- Google Analytics counter -->
+    <!-- /Google Analytics counter -->
+
+    <script>
+            
+    </script>
+</body>
+
+</html>
