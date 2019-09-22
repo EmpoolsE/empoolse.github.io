@@ -54,7 +54,7 @@ $(document).ready(function() {
 	});
 	$('.total-wr a').click(function (e) { 
 		e.preventDefault();
-		console.log($(".items>div"));
+		console.log($(".items>div").length);
 		if($('[name="phone"]').val() != ''){
 		let meassage = "";
 		$( ".items>div" ).each(function( index ) {
