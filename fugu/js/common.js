@@ -55,7 +55,7 @@ $(document).ready(function() {
 	$('.total-wr a').click(function (e) { 
 		e.preventDefault();
 		console.log($(".items>div").length);
-		if($('[name="phone"]').val() != ''){
+		if($('[name="phone"]').val() != '' && $(".items>div").length != 0){
 		let meassage = "";
 		$( ".items>div" ).each(function( index ) {
 			meassage += $( this ).find('h3').text()+", \n";
