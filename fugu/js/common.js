@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	$('.menu,.cart-wr').css('padding-top',$('.wraper > div:nth-child(1)').outerHeight());
 	/*$('.slider-wrap').slick({
 		dots: false,
 		infinite: false,
@@ -36,11 +37,12 @@ $(document).ready(function() {
 	$('.menu-wrap a').click(function (e) { 
 		e.preventDefault();
 		var hash = this.hash;
+		console.log(hash);
 		$('html, body').animate({
 			scrollTop: ($(hash).offset().top-$('.wraper > div:nth-child(1)').outerHeight())
 		}, 800);
 	});
-	$('.menu').css('padding-top',$('.wraper > div:nth-child(1)').outerHeight());
+	
 	$('.cart').click(function (e) { 
 		e.preventDefault();
 		$('.cart-wr').toggleClass('active');
@@ -54,27 +56,28 @@ $(document).ready(function() {
 	});
 	$('.total-wr a').click(function (e) { 
 		e.preventDefault();
-		console.log($(".items>div").length);
-		if($('[name="phone"]').val() != '' && $(".items>div").length != 0){
-		let meassage = "";
-		$( ".items>div" ).each(function( index ) {
-			meassage += $( this ).find('h3').text()+", \n";
-		});
-		meassage += "Всего "+$('.total-line p>span').text()+", \n";
-		meassage += " Телефон "+$('[name="phone"]').val();
-		let endpoint = 'https://api.telegram.org/bot935854161:AAHwlPlRxXoXvxRS12zu18cpeDBo7g2i12U/sendMessage?chat_id=184090117&text=%message';
-		let endpointUrl = endpoint.replace('%message', meassage);
+		let endpoint = 'https://api.telegram.org/bot935854161:AAHwlPlRxXoXvxRS12zu18cpeDBo7g2i12U/sendMessage?chat_id=184090117&text=message';
+		let endpointUrl = endpoint.replace('%message', 'asdq');
 		let xhr = new XMLHttpRequest();
 		xhr.open('GET', endpointUrl);
 		xhr.send();
-		}else{
-			$('[name="phone"]').css('box-shadow', '2px 2px 2px red');
-		}
 	});
 	$(document).mouseup(function (e) {
 		var container = $(".cart-wr");
 		if (container.has(e.target).length === 0){
 			container.removeClass('active');
 		}
+	});
+	$(".more a").click(function (e) { 
+		e.preventDefault();
+		$('.more').show();
+		$('.rolls .wrap>div:nth-child(n+9)').removeClass('show');
+		let wr = $(this).closest(".rolls");
+		console.log(wr.attr('id'));
+		$('html, body').animate({
+			scrollTop: ($("#"+wr.attr('id')).offset().top-$('.wraper > div:nth-child(1)').outerHeight())
+		}, 300);
+		wr.find('.wrap').find('div').addClass('show');
+		wr.find('.more').hide();
 	});
 });

@@ -54,10 +54,11 @@
                     </div>
                     <div class="total-wr">
                         <div class="total-line"><h3>Всего</h3><p><span>0</span> грн.</p></div>
-                        <div class="phone">
-                            <input type="text" name="phone" placeholder="Ваш телефон">
+                        <div>
+                            <p>Для заказа позвоните по номеру</p>
+                            <a href="tel:+380931317403">+38(093)131-74-03</a>
+                            <a href="tel:+380979714834">+38(097)971-48-34</a>
                         </div>
-                        <a href="">Заказать</a>
                     </div>
                 </div>
             </div>
@@ -69,7 +70,7 @@
                         <h2>Ролы</h2>
                     </div>
                     <div class="wrap">
-                        <div class="top hot" data-name="Рио" data-price="160">
+                        <div class="top hot show" data-name="Рио" data-price="160">
                             <h3>Рио</h3>
                             <p>Креветка Тигровая, сурими. икра Масаго, соус Спайси, авокадо, кунжут жареный.</p>
                             <img src="img/rio.png" alt="">
@@ -78,7 +79,7 @@
                                 <p>245г.</p>
                             </div>
                         </div>
-                        <div class="" data-name="РИНГО" data-price="85">
+                        <div class="show" data-name="РИНГО" data-price="85">
                             <h3>РИНГО</h3>
                             <p>Сурими, икра Масаго,японский омлет, авокадо</p>
                             <img src="img/r2.png" alt="">
@@ -87,7 +88,7 @@
                                 <p>205г.</p>
                             </div>
                         </div>
-                        <div class="" data-name="БОНИТО" data-price="59">
+                        <div class="show" data-name="БОНИТО" data-price="59">
                             <h3>БОНИТО</h3>
                             <p>Сыр сливочный, японский омлет, стружка тунца.</p>
                             <img src="img/r3.png" alt="">
@@ -96,7 +97,7 @@
                                 <p>190г.</p>
                             </div>
                         </div>
-                        <div class="" data-name="ХОКАЙДО" data-price="115">
+                        <div class="show" data-name="ХОКАЙДО" data-price="115">
                             <h3>ХОКАЙДО</h3>
                             <p>Креветка Тигровая, сыр сливочный, стружка тунца, кунжут жареный.</p>
                             <img src="img/r4.png" alt="">
@@ -105,7 +106,7 @@
                                 <p>215г.</p>
                             </div>
                         </div>
-                        <div class="hot" data-name="ФЬЮЖН" data-price="95">
+                        <div class="hot show" data-name="ФЬЮЖН" data-price="95">
                             <h3>ФЬЮЖН</h3>
                             <p>Лосось, сыр сливочный, соус Спайси, перец сладкий, кунжут жареный.</p>
                             <img src="img/r5.png" alt="">
@@ -114,7 +115,7 @@
                                 <p>255г.</p>
                             </div>
                         </div>
-                        <div class="top " data-name="ЛАКШЕРИ" data-price="100">
+                        <div class="top show" data-name="ЛАКШЕРИ" data-price="100">
                             <h3>ЛАКШЕРИ</h3>
                             <img src="img/r6.png" alt="">
                             <div class="price-block">
@@ -122,7 +123,7 @@
                                 <p>265г.</p>
                             </div>
                         </div>
-                        <div class="top " data-name="Филадельфия" data-price="110">
+                        <div class="top show" data-name="Филадельфия" data-price="110">
                             <h3>Филадельфия</h3>
                             <p>Лосось, сыр сливочный, огурец.</p>
                             <img src="img/r7.png" alt="">
@@ -131,7 +132,7 @@
                                 <p>245г.</p>
                             </div>
                         </div>
-                        <div class=" " data-name="БАНЗАЙ" data-price="160">
+                        <div class="show" data-name="БАНЗАЙ" data-price="160">
                             <h3>БАНЗАЙ</h3>
                             <p>Угорь, креветка Тигровая, сыр сливочный, соус Унаги, авокадо, кунжут жареный.</p>
                             <img src="img/r8.png" alt="">
@@ -140,7 +141,7 @@
                                 <p>240г.</p>
                             </div>
                         </div>
-                        <div class=" " data-name="ЭДЕМ" data-price="100">
+                        <div class="" data-name="ЭДЕМ" data-price="100">
                             <h3>ЭДЕМ</h3>
                             <p>Лосось, икра Масаго, сыр сливочный, огурец, перец сладкий.</p>
                             <img src="img/r9.png" alt="">
@@ -627,13 +628,16 @@
                             </div>
                         </div>
                     </div>
+                    <div class="more">
+                        <a href="#">Все</a>
+                    </div>
                 </div>
                 <div id="maki" class="rolls">
                     <div class="title">
                         <h2>Маки</h2>
                     </div>
                     <div class="wrap">
-                        <div class=" " data-name="лосось" data-price="60">
+                        <div class="show" data-name="лосось" data-price="60">
                             <h3>лосось</h3>
                             <p></p>
                             <img src="img/m1.png" alt="">
@@ -642,7 +646,7 @@
                                 <p>110г.</p>
                             </div>
                         </div>
-                        <div class=" " data-name="ОГуРЕц" data-price="35">
+                        <div class="show" data-name="ОГуРЕц" data-price="35">
                             <h3>ОГуРЕц</h3>
                             <p></p>
                             <img src="img/m1.png" alt="">
@@ -651,7 +655,7 @@
                                 <p>110г.</p>
                             </div>
                         </div>
-                        <div class=" " data-name="ЛОСОСЬ СПАЙСИ" data-price="65">
+                        <div class="show" data-name="ЛОСОСЬ СПАЙСИ" data-price="65">
                             <h3>ЛОСОСЬ СПАЙСИ</h3>
                             <p></p>
                             <img src="img/m1.png" alt="">
@@ -660,7 +664,7 @@
                                 <p>120г.</p>
                             </div>
                         </div>
-                        <div class=" " data-name="СУРИМИ СПАЙСИ" data-price="50">
+                        <div class="show" data-name="СУРИМИ СПАЙСИ" data-price="50">
                             <h3>СУРИМИ СПАЙСИ</h3>
                             <p></p>
                             <img src="img/m1.png" alt="">
@@ -669,7 +673,7 @@
                                 <p>120г.</p>
                             </div>
                         </div>
-                        <div class=" " data-name="ЧУКА" data-price="45">
+                        <div class="show" data-name="ЧУКА" data-price="45">
                             <h3>ЧУКА</h3>
                             <p></p>
                             <img src="img/m1.png" alt="">
@@ -678,7 +682,7 @@
                                 <p>110г.</p>
                             </div>
                         </div>
-                        <div class=" " data-name="УГОРЬ" data-price="65">
+                        <div class="show" data-name="УГОРЬ" data-price="65">
                             <h3>УГОРЬ</h3>
                             <p></p>
                             <img src="img/m1.png" alt="">
@@ -687,7 +691,7 @@
                                 <p>120г.</p>
                             </div>
                         </div>
-                        <div class=" " data-name="СУРИМИ" data-price="45">
+                        <div class="show" data-name="СУРИМИ" data-price="45">
                             <h3>СУРИМИ</h3>
                             <p></p>
                             <img src="img/m1.png" alt="">
@@ -696,7 +700,7 @@
                                 <p>110г.</p>
                             </div>
                         </div>
-                        <div class=" " data-name="овощной" data-price="50">
+                        <div class="show" data-name="овощной" data-price="50">
                             <h3>овощной</h3>
                             <p></p>
                             <img src="img/m1.png" alt="">
@@ -752,13 +756,16 @@
                         </div>
 
                     </div>
+                    <div class="more">
+                        <a href="#">Все</a>
+                    </div>
                 </div>
                 <div id="sets" class="rolls">
                     <div class="title">
                         <h2>Сеты</h2>
                     </div>
                     <div class="wrap">
-                        <div class="top " data-name="Фантини" data-price="470">
+                        <div class="top show" data-name="Фантини" data-price="470">
                             <h3>Фантини</h3>
                             <p></p>
                             <img src="img/s1.png" alt="">
@@ -767,7 +774,7 @@
                                 <p>990г.</p>
                             </div>
                         </div>
-                        <div class=" " data-name="Эмодзи" data-price="340">
+                        <div class="show" data-name="Эмодзи" data-price="340">
                             <h3>Эмодзи</h3>
                             <p></p>
                             <img src="img/s2.png" alt="">
@@ -776,7 +783,7 @@
                                 <p>785г.</p>
                             </div>
                         </div>
-                        <div class=" " data-name="Негрони" data-price="349">
+                        <div class="show" data-name="Негрони" data-price="349">
                             <h3>Негрони</h3>
                             <p></p>
                             <img src="img/s3.png" alt="">
@@ -785,7 +792,7 @@
                                 <p>790г.</p>
                             </div>
                         </div>
-                        <div class=" " data-name="Аризона" data-price="245">
+                        <div class="show" data-name="Аризона" data-price="245">
                             <h3>Аризона</h3>
                             <p></p>
                             <img src="img/s4.png" alt="">
@@ -794,7 +801,7 @@
                                 <p>445г.</p>
                             </div>
                         </div>
-                        <div class="new " data-name="Чикаго" data-price="362">
+                        <div class="new show" data-name="Чикаго" data-price="362">
                             <h3>Чикаго</h3>
                             <p></p>
                             <img src="img/s5.png" alt="">
@@ -803,7 +810,7 @@
                                 <p>755г.</p>
                             </div>
                         </div>
-                        <div class="new " data-name="Три дракона" data-price="480">
+                        <div class="new show" data-name="Три дракона" data-price="480">
                             <h3>Три дракона</h3>
                             <p></p>
                             <img src="img/s6.png" alt="">
@@ -812,7 +819,7 @@
                                 <p>740г.</p>
                             </div>
                         </div>
-                        <div class="new " data-name="Хьюстен" data-price="349">
+                        <div class="new show" data-name="Хьюстен" data-price="349">
                             <h3>Хьюстен</h3>
                             <p></p>
                             <img src="img/s7.png" alt="">
@@ -821,7 +828,7 @@
                                 <p>700г.</p>
                             </div>
                         </div>
-                        <div class="new " data-name="Филомания" data-price="460">
+                        <div class="new show" data-name="Филомания" data-price="460">
                             <h3>Филомания</h3>
                             <p></p>
                             <img src="img/s8.png" alt="">
@@ -867,13 +874,16 @@
                             </div>
                         </div>
                     </div>
+                    <div class="more">
+                        <a href="#">Все</a>
+                    </div>
                 </div>
                 <div id="tempura" class="rolls">
                     <div class="title">
                         <h2>Темпура/Опаленные</h2>
                     </div>
                     <div class="wrap">
-                        <div class="new hot" data-name="МАНХЭТТЕН" data-price="140">
+                        <div class="new hot show" data-name="МАНХЭТТЕН" data-price="140">
                             <h3>МАНХЭТТЕН</h3>
                             <p>Лосось, японский омлет, сыр сливочный, соус Шрирача, авокадо, лимон.</p>
                             <img src="img/t1.png" alt="">
@@ -882,7 +892,7 @@
                                 <p>270г.</p>
                             </div>
                         </div>
-                        <div class=" " data-name="фИЛА ОПАЛЕННАЯ" data-price="140">
+                        <div class="show" data-name="фИЛА ОПАЛЕННАЯ" data-price="140">
                             <h3>фИЛА ОПАЛЕННАЯ</h3>
                             <p>Лосось, сыр сливочный, соус Унаги, авокадо, кунжут жареный.</p>
                             <img src="img/t2.png" alt="">
@@ -891,7 +901,7 @@
                                 <p>260г.</p>
                             </div>
                         </div>
-                        <div class=" " data-name="ТАЙфуН" data-price="140">
+                        <div class="show" data-name="ТАЙфуН" data-price="140">
                             <h3>ТАЙфуН</h3>
                             <p>Лосось, икра Масаго, сыр сливочный, соус Унаги, огурец, кунжут жареный.</p>
                             <img src="img/t3.png" alt="">
@@ -900,7 +910,7 @@
                                 <p>260г.</p>
                             </div>
                         </div>
-                        <div class="new hot" data-name="ПАНКО" data-price="180">
+                        <div class="new hot show" data-name="ПАНКО" data-price="180">
                             <h3>ПАНКО</h3>
                             <p>Лосось, креветка Тигровая в темпера, икра Масаго, соус Спайси.</p>
                             <img src="img/t4.png" alt="">
@@ -909,7 +919,7 @@
                                 <p>235г.</p>
                             </div>
                         </div>
-                        <div class="new hot" data-name="НЕВАДА" data-price="140">
+                        <div class="new hot show" data-name="НЕВАДА" data-price="140">
                             <h3>НЕВАДА</h3>
                             <p>Лосось, сурими, икра Масаго,японский омлет, соус Спайси, соус Унаги, лук зеленый.</p>
                             <img src="img/t5.png" alt="">
@@ -918,7 +928,7 @@
                                 <p>255г.</p>
                             </div>
                         </div>
-                        <div class=" " data-name="Нидзи" data-price="140">
+                        <div class="show" data-name="Нидзи" data-price="140">
                             <h3>Нидзи</h3>
                             <p>Лосось, сыр сливочный, соус Унаги, огурец, авокадо, кунжут жареный.</p>
                             <img src="img/t6.png" alt="">
@@ -927,7 +937,7 @@
                                 <p>265г.</p>
                             </div>
                         </div>
-                        <div class="new " data-name="КИРО" data-price="140">
+                        <div class="new show" data-name="КИРО" data-price="140">
                             <h3>КИРО</h3>
                             <p>Лосось, икра Масаго, сыр сливочный, перец сладкий.</p>
                             <img src="img/t7.png" alt="">
@@ -936,7 +946,7 @@
                                 <p>240г.</p>
                             </div>
                         </div>
-                        <div class="new " data-name="ЛАЙТ-ТЕМПуРА" data-price="115">
+                        <div class="new show" data-name="ЛАЙТ-ТЕМПуРА" data-price="115">
                             <h3>ЛАЙТ-ТЕМПуРА</h3>
                             <p>Лосось, сыр сливочный, огурец, авокадо, лук зеленый,темпура.</p>
                             <img src="img/t8.png" alt="">
@@ -1000,13 +1010,16 @@
                             </div>
                         </div>
                     </div>
+                    <div class="more">
+                        <a href="#">Все</a>
+                    </div>
                 </div>
                 <div id="notrolls" class="rolls">
                     <div class="title">
                         <h2>Не роллы</h2>
                     </div>
                     <div class="wrap">
-                        <div class="new " data-name="Мисо" data-price="40">
+                        <div class="new show" data-name="Мисо" data-price="40">
                             <h3>Мисо</h3>
                             <p>Мисо, грибы Шиитаке, сыр Тофу, водорости Вакамэ, лук зеленый.</p>
                             <img src="img/n1.png" alt="">
@@ -1015,7 +1028,7 @@
                                 <p>200г.</p>
                             </div>
                         </div>
-                        <div class="new " data-name="мисо мидии" data-price="75">
+                        <div class="new show" data-name="мисо мидии" data-price="75">
                             <h3>мисо мидии</h3>
                             <p>Мидии, мисо, грибы Шиитаке, сыр Тофу, водорости Вакамэ, лук зеленый, кунжут жареный.</p>
                             <img src="img/n2.png" alt="">
@@ -1024,7 +1037,7 @@
                                 <p>300г.</p>
                             </div>
                         </div>
-                        <div class="new " data-name="мисо зби" data-price="79">
+                        <div class="new show" data-name="мисо зби" data-price="79">
                             <h3>мисо зби</h3>
                             <p>Креветка, мисо, грибы Шиитаке, сыр Тофу, водорости Вакамз, лук зеленый, кунжут жареный.</p>
                             <img src="img/n3.png" alt="">
@@ -1033,7 +1046,7 @@
                                 <p>300г.</p>
                             </div>
                         </div>
-                        <div class="new " data-name="МИСО СЯКЕ" data-price="75">
+                        <div class="new show" data-name="МИСО СЯКЕ" data-price="75">
                             <h3>МИСО СЯКЕ</h3>
                             <p>Лосось, мисо, грибы Шиитаке, сыр Тофу, водорости Вакамэ, лук зеленый.</p>
                             <img src="img/n4.png" alt="">
@@ -1042,7 +1055,7 @@
                                 <p>300г.</p>
                             </div>
                         </div>
-                        <div class="new " data-name="КАРТОфЕЛЬ ФРИ(Средняя)" data-price="28">
+                        <div class="new show" data-name="КАРТОфЕЛЬ ФРИ(Средняя)" data-price="28">
                             <h3>КАРТОфЕЛЬ ФРИ</h3>
                             <p>Средняя</p>
                             <img src="img/n5.png" alt="">
@@ -1051,7 +1064,7 @@
                                 <p>135г.</p>
                             </div>
                         </div>
-                        <div class="new " data-name="КАРТОфЕЛЬ ФРИ(Большая)" data-price="50">
+                        <div class="new show" data-name="КАРТОфЕЛЬ ФРИ(Большая)" data-price="50">
                             <h3>КАРТОфЕЛЬ ФРИ</h3>
                             <p>Большая</p>
                             <img src="img/n5.png" alt="">
@@ -1060,7 +1073,7 @@
                                 <p>270г.</p>
                             </div>
                         </div>
-                        <div class="new " data-name="КУРИНЫЕ НАГЕТСЫ(Средняя)" data-price="50">
+                        <div class="new show" data-name="КУРИНЫЕ НАГЕТСЫ(Средняя)" data-price="50">
                             <h3>КУРИНЫЕ НАГЕТСЫ</h3>
                             <p>Средняя</p>
                             <img src="img/n6.png" alt="">
@@ -1069,7 +1082,7 @@
                                 <p>8 шт.</p>
                             </div>
                         </div>
-                        <div class="new " data-name="КУРИНЫЕ НАГЕТСЫ(Большая)" data-price="70">
+                        <div class="new show" data-name="КУРИНЫЕ НАГЕТСЫ(Большая)" data-price="70">
                             <h3>КУРИНЫЕ НАГЕТСЫ</h3>
                             <p>Большая</p>
                             <img src="img/n6.png" alt="">
@@ -1124,6 +1137,9 @@
                             </div>
                         </div>
                     </div>
+                    <div class="more">
+                        <a href="#">Все</a>
+                    </div>
                 </div>
                 <div id="more" class="rolls">
                     <div class="title">
@@ -1139,7 +1155,7 @@
                                 <p></p>
                             </div>
                         </div>-->
-                        <div class=" " data-name="ПАЛОЧКИ" data-price="2">
+                        <div class=" show" data-name="ПАЛОЧКИ" data-price="2">
                             <h3>ПАЛОЧКИ</h3>
                             <p></p>
                             <img src="img/d2.png" alt="">
@@ -1148,7 +1164,7 @@
                                 <p></p>
                             </div>
                         </div>
-                        <div class=" " data-name="ИМБИРЬ" data-price="10">
+                        <div class=" show" data-name="ИМБИРЬ" data-price="10">
                             <h3>ИМБИРЬ</h3>
                             <p></p>
                             <img src="img/d3.png" alt="">
@@ -1157,7 +1173,7 @@
                                 <p>30г.</p>
                             </div>
                         </div>
-                        <div class=" " data-name="СОУС СОЕВЫЙ" data-price="12">
+                        <div class=" show" data-name="СОУС СОЕВЫЙ" data-price="12">
                             <h3>СОУС СОЕВЫЙ</h3>
                             <p></p>
                             <img src="img/d4.png" alt="">
@@ -1166,7 +1182,7 @@
                                 <p>100мл.</p>
                             </div>
                         </div>
-                        <div class=" " data-name="СОУС ОРЕХОВЫй" data-price="30">
+                        <div class=" show" data-name="СОУС ОРЕХОВЫй" data-price="30">
                             <h3>СОУС ОРЕХОВЫй</h3>
                             <p></p>
                             <img src="img/d5.png" alt="">
@@ -1184,7 +1200,7 @@
                                 <p></p>
                             </div>
                         </div>-->
-                        <div class=" " data-name="ВАСАБИ" data-price="15">
+                        <div class=" show" data-name="ВАСАБИ" data-price="15">
                             <h3>ВАСАБИ</h3>
                             <p></p>
                             <img src="img/d7.png" alt="">
@@ -1193,7 +1209,7 @@
                                 <p>30г.</p>
                             </div>
                         </div>
-                        <div class=" " data-name="СОУС СПАЙСИ" data-price="30">
+                        <div class=" show" data-name="СОУС СПАЙСИ" data-price="30">
                             <h3>СОУС СПАЙСИ</h3>
                             <p></p>
                             <img src="img/d8.png" alt="">
@@ -1211,6 +1227,9 @@
                                 <p></p>
                             </div>
                         </div>-->
+                    </div>
+                    <div class="more">
+                        <a href="#">Все</a>
                     </div>
                 </div>
             </div>

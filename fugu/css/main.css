@@ -61,9 +61,13 @@ h1 span {
   font-size: 11px;
   cursor: pointer;
   margin-bottom: 20px;
-  display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  display: none;
+}
+
+.wrap > div.show {
+  display: flex;
 }
 
 .wrap img {
@@ -98,6 +102,10 @@ h1 span {
   text-align: center;
 }
 
+.menu {
+  width: 83vw;
+}
+
 .cart {
   position: absolute;
   background-color: #db2016;
@@ -111,7 +119,6 @@ h1 span {
   text-decoration: none;
   font-size: 20px;
   line-height: 1;
-  transition: all .3s linear;
 }
 
 .cart-wr {
@@ -121,16 +128,17 @@ h1 span {
   bottom: 0;
   height: 100%;
   background-color: #1f1c17;
-  transition: all .3s linear;
-  z-index: 1010;
+  z-index: 999;
+  width: 16vw;
 }
 
-.cart-wr.active .cart-block {
-  width: 300px;
+.cart-wr .cart-block {
+  width: 16vw;
 }
 
-.cart-wr.active .cart {
+.cart-wr .cart {
   right: 300px;
+  display: none;
 }
 
 .cart-wr .items {
@@ -152,18 +160,13 @@ h1 span {
 }
 
 .cart-block {
-  position: absolute;
-  right: 0;
-  width: 0px;
-  top: 0;
-  bottom: 0;
   height: 100%;
   background-color: #1f1c17;
   transition: all .3s linear;
 }
 
 .cart-block > div {
-  width: 300px;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -176,7 +179,7 @@ h1 span {
 .total-wr a {
   background-color: #db2016;
   text-align: center;
-  font-size: 27px;
+  font-size: 2.7rem;
   color: #1f1c17;
   text-transform: uppercase;
   display: block;
