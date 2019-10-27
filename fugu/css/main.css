@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
   font-weight: normal;
   font-size: 0.52vw;
   min-width: 320px;
@@ -391,6 +391,18 @@ h3 {
   height: 100%;
 }
 
+@media screen and (max-width: 1446px) {
+  .wrap > div {
+    width: 14.285%;
+  }
+}
+
+@media screen and (max-width: 1266px) {
+  .wrap > div {
+    width: 16.66%;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .wrap > div {
     width: 16.5%;
@@ -407,6 +419,33 @@ h3 {
   }
   .contacts-wrap {
     font-size: 1.3vw;
+  }
+}
+
+@media screen and (max-width: 1085px) {
+  .wrap > div {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .cart-wr {
+    width: 0;
+    z-index: 5555;
+    transition: all .3s linear;
+  }
+  .cart-wr.active {
+    width: 30%;
+  }
+  .cart-wr .cart {
+    left: -8vw;
+    display: flex;
+  }
+  .cart-wr .cart-block {
+    width: 100%;
+  }
+  .menu {
+    width: 100vw;
   }
 }
 
@@ -454,6 +493,9 @@ h3 {
   }
   .menu-wrap.active {
     display: block;
+  }
+  .cart-wr.active {
+    width: 80%;
   }
   #inst-wr a {
     width: 33%;
