@@ -1,26 +1,4 @@
-if ($(window).width() < 1446 && $(window).width() > 1266) {
-	$('.wrap > div:nth-child(8)').removeClass('show');
-}else if($(window).width() < 1266 && $(window).width() > 1084){
-	$('.wrap > div:nth-child(8)').removeClass('show');
-	$('.wrap > div:nth-child(7)').removeClass('show');
-}else if($(window).width() < 1085 && $(window).width() > 903){
-	$('.wrap > div:nth-child(8)').removeClass('show');
-	$('.wrap > div:nth-child(7)').removeClass('show');
-	$('.wrap > div:nth-child(6)').removeClass('show');
-}else if($(window).width() < 901 && $(window).width() > 640){
-	$('.wrap > div:nth-child(8)').removeClass('show');
-	$('.wrap > div:nth-child(7)').removeClass('show');
-	$('.wrap > div:nth-child(6)').removeClass('show');
-	$('.wrap > div:nth-child(5)').removeClass('show');
-}else if($(window).width() < 641 && $(window).width() > 300){
-	$('.wrap > div:nth-child(8)').removeClass('show');
-	$('.wrap > div:nth-child(7)').removeClass('show');
-	$('.wrap > div:nth-child(6)').removeClass('show');
-	$('.wrap > div:nth-child(5)').removeClass('show');
-	$('.wrap > div:nth-child(4)').removeClass('show');
-	$('.wrap > div:nth-child(3)').removeClass('show');
-}
-
+preShow();
 $(document).ready(function() {
 	$('.menu,.cart-wr').css('padding-top',$('.wraper > div:nth-child(1)').outerHeight());
 	/*$('.slider-wrap').slick({
@@ -74,7 +52,7 @@ $(document).ready(function() {
 	$('.rolls .wrap>div').click(function (e) { 
 		e.preventDefault();
 		$('.cart .icon+span').text(($('.cart .icon+span').text()*1)+1);
-		$('.items').append('<div><h3>'+$(this).data('name')+'</h3><span>'+$(this).data('price')+' грн.</span></div>');
+		$('.items').append('<div><img src="'+$(this).find('img').attr("src")+'" alt=""><h3>'+$(this).data('name')+'</h3><span>'+$(this).data('price')+' грн.</span></div>');
 		$('.total-line span').text(($('.total-line span').text()*1)+$(this).data('price'));
 	});
 	$('.total-wr a').click(function (e) { 
@@ -94,13 +72,47 @@ $(document).ready(function() {
 	$(".more a").click(function (e) { 
 		e.preventDefault();
 		$('.more').show();
-		$('.rolls .wrap>div:nth-child(n+9)').removeClass('show');
+		$('.rolls .wrap>div').addClass('show');
+		$(".filter-wrap>a").removeClass('active');
+		$(".filter-wrap>a:first-child").addClass('active');
+		preShow();
+		$('.rolls .filter-wrap').removeClass('show');
 		let wr = $(this).closest(".rolls");
 		console.log(wr.attr('id'));
 		$('html, body').animate({
 			scrollTop: ($("#"+wr.attr('id')).offset().top-$('.wraper > div:nth-child(1)').outerHeight())
 		}, 300);
+		wr.find('.filter-wrap').addClass('show');
 		wr.find('.wrap').find('div').addClass('show');
 		wr.find('.more').hide();
 	});
+	$(".filter-wrap>a").click(function (e) { 
+		e.preventDefault();
+		$(".filter-wrap>a").removeClass('active');
+		$(this).addClass('active');
+		$(this).closest('.rolls').find('.wrap>div').removeClass('show');
+		let word = $(this).data('filter');
+		$.each($(this).closest('.rolls').find('.wrap>div'), function (indexInArray, valueOfElement) { 
+			var a = $(this).data('ingredient');
+			 if(a.includes(word)){
+				$(this).addClass('show');
+			 }
+		});
+	});
 });
+
+function preShow(){
+	$('.rolls .wrap>div:nth-child(n+9)').removeClass('show');
+	if ($(window).width() < 1446 && $(window).width() > 1266) {
+		$('.rolls .wrap>div:nth-child(n+8)').removeClass('show');
+	}else if($(window).width() < 1266 && $(window).width() > 1084){
+		$('.rolls .wrap>div:nth-child(n+7)').removeClass('show');
+	}else if($(window).width() < 1085 && $(window).width() > 903){
+		$('.rolls .wrap>div:nth-child(n+6)').removeClass('show');
+	}else if($(window).width() < 901 && $(window).width() > 640){
+		$('.rolls .wrap>div:nth-child(n+5)').removeClass('show');
+	}else if($(window).width() < 641 && $(window).width() > 300){
+		$('.rolls .wrap>div:nth-child(n+3)').removeClass('show');
+	}
+	
+}
